@@ -20,10 +20,7 @@ class RecyclerViewAdapter (private val context : Context, var data: MutableList<
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view : View
 
-            view = LayoutInflater.from(context).inflate(R.layout.listview,
-                parent, false)
-
-
+        view = LayoutInflater.from(context).inflate(R.layout.listview, parent, false)
         return MyViewHolder(view, context)
     }
 
